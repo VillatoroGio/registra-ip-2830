@@ -3,18 +3,20 @@ import Layout from './componentes/layout';
 import Registro from './paginas/registro';
 import Dashboard from './paginas/dashboard';
 import RutaProtegida from './componentes/RutaProtegida';
+import RegistrarObra from './paginas/RegistrarObra';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
-          {/* Ruta pública con el formulario */}
+          {/* Ruta pública */}
           <Route index element={<Registro />} />
-          
-          {/* Ruta protegida para el dashboard */}
+
+          {/* Rutas protegidas */}
           <Route element={<RutaProtegida />}>
             <Route path="dashboard" element={<Dashboard />} />
+            <Route path="registrar-obra" element={<RegistrarObra />} />
           </Route>
         </Route>
       </Routes>
