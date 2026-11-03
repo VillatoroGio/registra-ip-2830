@@ -36,7 +36,6 @@ function Dashboard() {
         gap: '12px', 
         marginTop: '2rem' 
       }}>
-        {/* Botón que te lleva al Wizard de 4 pasos */}
         <button 
           onClick={() => navigate('/registrar-obra')} 
           className="boton-primario"
@@ -45,7 +44,14 @@ function Dashboard() {
           + Registrar Nueva Obra
         </button>
 
-        {/* Botón para cerrar sesión */}
+        <button 
+          onClick={() => navigate('/obras')} 
+          className="boton-secundario"
+          style={{ margin: 0 }}
+        >
+          Ver Obras y Certificados
+        </button>
+
         <button 
           onClick={cerrarSesion} 
           className="boton-secundario"
