@@ -39,27 +39,29 @@ function Dashboard() {
         <button 
           onClick={() => navigate('/registrar-obra')} 
           className="boton-primario"
-          style={{ margin: 0 }}
+          style={{ minHeight: '44px', margin: 0 }}
         >
           + Registrar Nueva Obra
         </button>
 
         <button 
-          onClick={() => navigate('/obras')} 
+          onClick={() => navigate('/galeria')} 
           className="boton-secundario"
-          style={{ margin: 0 }}
+          style={{ minHeight: '44px', margin: 0 }}
         >
-          Ver Obras y Certificados
+          Explorar Galería de Obras
         </button>
 
         <button 
           onClick={cerrarSesion} 
           className="boton-secundario"
           style={{ 
+            minHeight: '44px',
             backgroundColor: '#fee2e2', 
             color: '#dc2626', 
             border: '1px solid #fecaca',
-            transition: 'all 0.2s ease'
+            transition: 'all 0.2s ease',
+            margin: 0
           }}
         >
           Cerrar Sesión

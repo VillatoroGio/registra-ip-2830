@@ -4,7 +4,7 @@ import Registro from './paginas/registro';
 import Dashboard from './paginas/dashboard';
 import RutaProtegida from './componentes/RutaProtegida';
 import RegistrarObra from './paginas/RegistrarObra';
-import DetalleObra from './paginas/DetalleObra';
+import Galeria from './paginas/Galeria';
 
 function App() {
   return (
@@ -15,7 +15,8 @@ function App() {
           <Route element={<RutaProtegida />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="registrar-obra" element={<RegistrarObra />} />
-            <Route path="obras" element={<DetalleObra />} />
+            <Route path="galeria" element={<Galeria />} />
+            <Route path="obras" element={<Galeria />} />
           </Route>
         </Route>
       </Routes>
